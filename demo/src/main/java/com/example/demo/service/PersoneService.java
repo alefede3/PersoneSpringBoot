@@ -22,4 +22,9 @@ public class PersoneService {
     public List<Persone> getAllPersone(){
         return personeRepository.findAll();
     }
+
+    public Persone getPersona(Long id){
+        return personeRepository.getReferenceById(id);
+    }
+
 }
