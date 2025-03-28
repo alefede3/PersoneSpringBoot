@@ -19,7 +19,7 @@ public class ModificaController {
     private PersoneService personeService;
 
     @PostMapping("/update/{id}")
-    public String modificaPersona(@PathVariable Long id, @ModelAttribute PersoneDTO personeDTO, Model model){
+    public String updatePersona(@PathVariable Long id, @ModelAttribute PersoneDTO personeDTO, Model model){
         // Persone personaModificata = personeService.getPersona(id);
         Persone personaModificata = new Persone();
         personaModificata.setId(personeDTO.getId());
@@ -32,7 +32,7 @@ public class ModificaController {
     }
 
     @GetMapping("/edit/{id}")
-    public String updatePersone(@PathVariable Long id, Model model) {
+    public String editaPersone(@PathVariable Long id, Model model) {
         Persone user  = personeService.getPersona(id);
 
         model.addAttribute("user", user);
