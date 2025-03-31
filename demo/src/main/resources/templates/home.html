@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head><title>Home Page</title></head>
+<head>
+    <title>Home Page</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+</head>
 <body>
-    <h1>Inserisci i tuoi dati</h1>
+    <h1>Inserisci i dati</h1>
     <form action="/save" method="post">
-        <p> Nome : <input type="text" name="nome" required> </p>
-        <p> Cognome : <input type="text" name="cognome" required> </p>
-        <p> Età : <input type="number" name="eta" required> </p>
-        <p> <input type="submit" name="invio" value="Conferma"> </p>
+        <p> Nome: <input type="text" name="nome" required> </p>
+        <p> Cognome: <input type="text" name="cognome" required> </p>
+        <p> Età: <input type="number" name="eta" required> </p>
+        <p> <input type="submit" name="invio" value="Conferma", class="waves-effect waves-light btn"> </p>
     </form>
+    <a class="waves-effect waves-light btn", href="list">Indietro</a>
+    <script type="text/javascript" src="js/materialize.min.js"></script> 
 </body>
 </html>

@@ -30,7 +30,7 @@ public class PersoneController {
 
         personeService.savePersona(nuovaPersona); 
 
-        return "redirect:/home"; 
+        return "redirect:/list"; 
     }
 
     @GetMapping("/list")

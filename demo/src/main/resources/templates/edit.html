@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head><title>Modifica</title></head>
+<head>
+    <title>Modifica</title>
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen,projection"/>
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+</head>
 <body>
+    <h1>Modifica</h1>
     <form th:action="@{|/update/${user.id}|}" method="POST">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" th:value="${user.nome}" required>
+        <p>Nome:<input type="text" id="nome" name="nome" th:value="${user.nome}" required></p>
     
-        <label for="cognome">Cognome:</label>
-        <input type="text" id="cognome" name="cognome" th:value="${user.cognome}" required>
+        <p>Cognome:<input type="text" id="cognome" name="cognome" th:value="${user.cognome}" required></p>
     
-        <label for="eta">Età:</label>
-        <input type="text" id="eta" name="eta" th:value="${user.eta}" required>
+        <p>Età:<input type="text" id="eta" name="eta" th:value="${user.eta}" required></p>
     
-        <button type="submit">Salva modifiche</button>
-    </form>    
+        <button class="btn waves-effect waves-light" type="submit">
+            <i class="material-icons">done</i>
+        </button>
+    </form>
+    <script type="text/javascript" src="js/materialize.min.js"></script>    
 </body>
 </html>
 
