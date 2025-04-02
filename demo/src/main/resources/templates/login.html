@@ -20,17 +20,19 @@
             <div class="input-field col s6">
                 <input type="password" id="password" name="password" class="validate" required>
                 <label for="password">Password</label>
+                <p>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Accedi
+                    <i class="material-icons right">arrow_forward</i>
+                    </button>
+                </p>
             </div>
         </div>
-        <p>
-            <button class="btn waves-effect waves-light" type="submit" name="action">Conferma
-                <i class="material-icons right">send</i>
-            </button>
-        </p>
-        <div th:if="${error}" style="color: red;">
-            <p th:text="${error}"></p>
+        <div th:if="${error}" style="color: red;" class="row">
+            <div class="input-field col s6">
+                <p th:text="${error}"></p>
+            </div>  
         </div>
-        <div th:unless="${error}" style="color: red;">
+        <div th:unless="${error}">
             <a href="/list"></a>
         </div>
     </form>

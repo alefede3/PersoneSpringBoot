@@ -12,7 +12,7 @@
     <table class="striped" style="width: auto;">
         <thead>
             <tr>
-                <th style="text-align: center;">ID</th>
+            <!--    <th style="text-align: center;">ID</th> -->
                 <th style="text-align: center;">Nome</th>
                 <th style="text-align: center;">Cognome</th>
                 <th style="text-align: center;">Età</th>
@@ -20,7 +20,7 @@
         </thead>
         <tbody>
             <tr th:each = "persona: ${persone}">
-                <td th:text="${persona.id}" style="width: 50px; text-align: center;"></td>
+            <!--    <td th:text="${persona.id}" style="width: 50px; text-align: center;"></td> -->
                 <td th:text="${persona.nome}" style="width: 50px; text-align: center;"></td>
                 <td th:text="${persona.cognome}" style="width: 50px; text-align: center;"></td>
                 <td th:text="${persona.eta}" style="width: 50px; text-align: center;"></td>
@@ -30,7 +30,7 @@
             </tr>
         </tbody>
     </table>
-    <a class="btn-floating btn-large waves-effect waves-light blue", href="/home"><i class="material-icons">add</i></a>
+    <a class="btn-floating btn-large waves-effect waves-light light-blue" href="/home"><i class="material-icons">add</i></a>
     <script type="text/javascript" src="js/materialize.min.js"></script> 
 </body>
 </html>
