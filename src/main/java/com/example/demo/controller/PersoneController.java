@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @Controller
+@CrossOrigin(origins = "http://localhost:4200")
 public class PersoneController {
 
     @Autowired
@@ -30,7 +31,7 @@ public class PersoneController {
 
         personeService.savePersona(nuovaPersona); 
 
-        return "redirect:/home"; 
+        return "redirect:/list"; 
     }
 
     @GetMapping("/list")
