@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista Persone</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+</head>
+<body>
+    <h1>Lista delle persone</h1>
+    <table class="striped" style="width: auto;">
+        <thead>
+            <tr>
+            <!--    <th style="text-align: center;">ID</th> -->
+                <th style="text-align: center;">Nome</th>
+                <th style="text-align: center;">Cognome</th>
+                <th style="text-align: center;">Età</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each = "persona: ${persone}">
+            <!--    <td th:text="${persona.id}" style="width: 50px; text-align: center;"></td> -->
+                <td th:text="${persona.nome}" style="width: 50px; text-align: center;"></td>
+                <td th:text="${persona.cognome}" style="width: 50px; text-align: center;"></td>
+                <td th:text="${persona.eta}" style="width: 50px; text-align: center;"></td>
+                <td>
+                    <a th:href="@{|/edit/${persona.id}|}" style="font-size: 7;">Modifica</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a class="btn-floating btn-large waves-effect waves-light light-blue" href="/home"><i class="material-icons">add</i></a>
+    <script type="text/javascript" src="js/materialize.min.js"></script> 
+</body>
+</html>
