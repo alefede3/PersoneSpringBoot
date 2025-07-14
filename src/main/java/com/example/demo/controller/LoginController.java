@@ -11,12 +11,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.example.demo.service.CredenzialiService;
 
 @Controller
-@CrossOrigin(origins = "http://localhost:4200")
 public class LoginController {
 
     @Autowired
     private CredenzialiService credenzialiService;
-    
+
     @GetMapping("/")
     public String inserisciCredenziali(){
 
@@ -33,5 +32,6 @@ public class LoginController {
             return "login";
         }
     }
+
     
 }

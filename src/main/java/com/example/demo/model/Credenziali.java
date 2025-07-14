@@ -12,23 +12,23 @@ public class Credenziali {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id_credenziali;
+    private Long idCredenziali;
     private String username;
     private String password;
 
     public Credenziali(){};
 
-    public Credenziali(Long id_credenziali, String username, String password) {
-        this.id_credenziali = id_credenziali;
+    public Credenziali(Long idCredenziali, String username, String password) {
+        this.idCredenziali = idCredenziali;
         this.username = username;
         this.password = password;
     }
 
-    public Long getid_credenziali() {
-        return id_credenziali;
+    public Long getidCredenziali() {
+        return idCredenziali;
     }
-    public void setid_credenziali(Long id_credenziali) {
-        this.id_credenziali = id_credenziali;
+    public void setidCredenziali(Long idCredenziali) {
+        this.idCredenziali = idCredenziali;
     }
     public String getUsername() {
         return username;

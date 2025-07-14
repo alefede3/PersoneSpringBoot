@@ -6,6 +6,8 @@ public class PersoneDTO {
     private String cognome;
     private int eta;
 
+    public PersoneDTO(){}
+
     public PersoneDTO(Long id, String nome, String cognome, int eta) {
         this.id = id;
         this.nome = nome;

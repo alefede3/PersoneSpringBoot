@@ -14,7 +14,6 @@ import com.example.demo.model.PersoneDTO;
 import com.example.demo.service.PersoneService;
 
 @Controller
-@CrossOrigin(origins = "http://localhost:4200")
 public class ModificaController {
 
     @Autowired
