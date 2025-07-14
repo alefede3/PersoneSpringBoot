@@ -16,5 +16,29 @@ Supporta login, visualizzazione, inserimento e modifica dati tramite interfaccia
 
 ---
 
-## 📁 Struttura del progetto
+
+---
+
+## ⚙️ Come eseguire il progetto
+
+### 1. Requisiti
+
+- JDK 17
+- Maven 3.x
+
+---
+
+### 2. Avvio dell'applicazione
+
+Apri il terminale nella cartella del progetto e digita:
+
+```bash
+./mvnw spring-boot:run
+
+
+---
+
+Una volta avviata, l’app sarà disponibile all’indirizzo:
+
+http://localhost:8080
 
